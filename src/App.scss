@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b79188;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.homepage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title {
+  font-family: "Rock Salt", cursive;
+  font-size: 8rem;
+  transform: rotate(-5deg);
+  color: #000;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.home-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.works-button {
+  background-image: url('/splash-one.png');
+  background-position: center;
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  font-family: "Rock Salt", cursive;
+}
+
+.works-button:hover {
+  transform: rotate(-5deg) scale(1.1);
+}
+
+.contact-button {
+  background-image: url('/splash-two.png');
+  background-position: center;
+  background-size: contain;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  font-family: "Rock Salt", cursive;
+}
+
+.contact-button:hover {
+  transform: rotate(    5deg) scale(1.1);
+}
+
+.home-button {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.word-div {
+  margin-top: -100px;
+  width: 600px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rock Salt", cursive;
+  transform: rotate(-5deg);
+  color: #000;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+
+.letter.out {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  
+  .letter.outFade {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+
+  .letter.behind {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  .letter.in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .word {
+    position: absolute;
+    top: 0;
+    transition: opacity 1s ease;
+  }
+
+
+  /* Project Card Styles */
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .back-button {
+    background-color: transparent;
+    border: none;
+    background-image: url('/splash-one.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 200px;
+    color: white;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    transform: rotate(-5deg) scale(1.1);
+  }
+
+  .page-title {
+    font-family: "Rock Salt", cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: #000;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+  }
+
+  .placeholder {
+    width: 200px;
+  }
+  
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 50px;
+  }
+  
+  .project-card-grid {
+    background-color: white;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);  
+    width: 90%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(160px, auto);
+    grid-gap: 10px;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .project-card-grid::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    width: 15px;
+    height: 60px;
+    background-color: #d9d9d9;
+    transform: rotate(45deg);
+    z-index: 2;
+  }
+  
+  .project-card-grid::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -15px;
+    width: 60px;
+    height: 15px;
+    background-color: #d9d9d9;
+    transform: rotate(45deg);
+    z-index: 2;
+  }
+
+  .project-card-grid:nth-child(1) {
+    transform: rotate(1deg);
+  }
+  
+  .project-card-grid:nth-child(2) {
+    transform: rotate(-2deg);
+  }
+  
+  .project-card-grid:nth-child(3) {
+    transform: rotate(2deg);
+  }
+  
+  .project-card-grid:nth-child(4) {
+    transform: rotate(-1deg);
+  }
+
+
+  .project-card-grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .one {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: rgb(115, 51, 235);
+  }
+
+  .two {
+    grid-column: 2/5;
+    grid-row: 1/3;
+    align-items: flex-start;
+    background-color: rgb(39, 255, 255);
+  }
+
+  .three {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    background-color: rgb(245, 62, 220);
+  }
+
+  .four {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    background-color: rgb(115, 51, 235);
+    color: white;
+    padding: 10px;
+  }
+
+  .five {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    background-color: rgb(39, 255, 255);
+  }
+
+  .six {
+    grid-column: 3/5;
+    grid-row: 4/5;
+    background-color: rgb(245, 62, 220);
+  }
+
+  .project-card-grid h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+
+  }
+  
+  .project-card-grid p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .project-card-grid img {
+    max-width: 100%;
+    border-radius: 4px;
+    
+  }
+  
+  .project-card-grid ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  
+  .project-card-grid li {
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+  }
+  
+  .links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .link {
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px;
+    border: solid 4px black;
+    background-color: white;
+  }
+
+  .link:hover {
+    border: dashed 4px black;
+  }
+  
+  .error-message {
+    color: #ff0000;
+    margin-bottom: 20px;
+  }
+  
+  .disclaimer {
+    padding: 10px;
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .home-title {
+      font-size: 6rem;
+    }
+  
+    .works-button,
+    .contact-button {
+      height: 250px;
+      width: 250px;
+      text-align: center;
+    }
+  
+    .word-div {
+      font-size: 2.5rem;
+      width: 80%;
+      margin-top: -50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home-title {
+      font-size: 4rem;
+    }
+  
+    .works-button,
+    .contact-button {
+      height: 200px;
+      width: 200px;
+    }
+  
+    .word-div {
+      font-size: 2rem;
+    }
+  
+    .home-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .project-card-grid ul {
+    
+    flex-direction: column;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  @media (max-width: 480px) {
+    .home-title {
+      font-size: 3rem;
+    }
+  
+    .works-button,
+    .contact-button {
+      height: 150px;
+      width: 150px;
+    }
+  
+    .word-div {
+      font-size: 1.5rem;
+    }
+  
+    .page-title {
+      font-size: 2rem;
+    }
+  }

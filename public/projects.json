@@ -1,0 +1,43 @@
+[
+    {
+    "id": 1,
+    "name": "LT Tattoo",
+    "description": "This project focuses on creating an engaging and culturally respectful website for LT Tattoo. LT Tattoo celebrates traditional Māori Tā Moko, and well as more classic western Tattoo styles. The website aims to create a space for Lone to show off his work and connect him with a wider audience.",
+    "technologies": ["React", "Vite", "Sass"],
+    "img": "./proj-imgs/lt-tattoo.png",
+    "live_demo": "https://lt-tattoo.vercel.app/#/",
+    "repository": "https://github.com/yazzamuffiny/LT-Tattoo",
+    "backend": "https://github.com/yazzamuffiny/LT-Tattoo-Backend",
+    "disclaimer": "Disclaimer: This website was created as part of an academic project and may not reflect the business. It is intended for educational purposes only."
+  },
+  {
+    "id": 2,
+    "name": "Baobab Cafe",
+    "description": "Redesigning the website for Baobab Café involved creating a fresh, engaging, and functional online presence that aligns with the café's character while showcasing my skills in web design. The project focused primarily on the creative aspects, simulating a real-world design process.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "img": "./proj-imgs/baobab-redesign.png",
+    "live_demo": "https://formative-1-2-peach.vercel.app/",
+    "repository": "https://github.com/yazzamuffiny/Formative-1.2",
+    "disclaimer": "Disclaimer: This website was created as part of an academic project and may not reflect the business. It is intended for educational purposes only."
+  },
+  {
+    "id": 3,
+    "name": "Taha Moana Site",
+    "description": "The Taha Moana Website is a mock site made for NZ Tourism to promote accommodation in the Northland Region of New Zealand, particularly focusing on Beach side and Waterfront accommodation.",
+    "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
+    "img": "./proj-imgs/taha-moana.png",
+    "live_demo": "https://taha-moana.vercel.app/",
+    "repository": "https://github.com/yazzamuffiny/Taha-Moana",
+    "disclaimer": "Disclaimer. This site was made as an academic project and does not reflect any real world businesses or business locations"
+  },
+  {
+    "id": 4,
+    "name": "Welcome Gamer Games Catalogue",
+    "description": "This Website is a comprehensive platform designed to showcase and manage a collection of video games. It features an intuitive user interface where users can explore games by genre, platform, or alphabetically. Each game listing includes detailed information, such as descriptions, price, and media previews. ",
+    "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
+    "img": "./proj-imgs/game-catelogue.png",
+    "live_demo": "https://formative-2-2-six.vercel.app/",
+    "repository": "https://github.com/yazzamuffiny/formative-2.2",
+    "disclaimer": "Disclaimer. This site was made as an academic project and does not reflect any real world businesses or business locations"
+  }
+]
