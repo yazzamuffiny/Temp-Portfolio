@@ -219,11 +219,11 @@ body {
   }
   
   .project-card-grid:nth-child(3) {
-    transform: rotate(2deg);
+    transform: rotate(-2deg);
   }
   
   .project-card-grid:nth-child(4) {
-    transform: rotate(-1deg);
+    transform: rotate(1deg);
   }
 
 
@@ -233,48 +233,175 @@ body {
     justify-content: center;
   }
 
+  // lt tattoo project
+  .project-card-grid:nth-child(1) {
+    .one {
+      background-color: rgb(184, 0, 0);
+      color: white;
+    }
+  
+    .two {
+      background-color: rgb(0, 0, 0);
+    }
+  
+    .three {
+      background-color: rgb(255, 255, 255);
+      border: solid 3px black;
+    }
+  
+    .four {
+      background-color: rgb(184, 0, 0);
+      color: white;
+    }
+  
+    .five {
+      background-color: rgb(0, 0, 0);
+    }
+  
+    .six {
+      background-color: rgb(255, 255, 255);
+      border: solid 3px black;
+    }
+  }
+
+    // baobab
+  .project-card-grid:nth-child(2) {
+    .one {
+      background-color: rgb(0, 92, 12);
+      color: white;
+    }
+  
+    .two {
+      background-color: rgb(255, 255, 255);
+      border: solid 3px black;
+    }
+  
+    .three {
+      background-color: rgb(183, 240, 209);
+     
+    }
+  
+    .four {
+      background-color: rgb(0, 92, 12);
+      color: white;
+    }
+  
+    .five {
+      background-color: rgb(255, 255, 255);
+      border: solid 3px black;
+    }
+  
+    .six {
+      background-color: rgb(183, 240, 209);
+    }
+  }
+
+    // taha moana
+  .project-card-grid:nth-child(3) {
+    .one {
+      background-color: rgb(250, 74, 212);
+    }
+  
+    .two {
+      background-color: rgb(149, 218, 228);
+      
+    }
+  
+    .three {
+      background-color: rgb(152, 41, 255);
+      color: white;
+    }
+  
+    .four {
+      background-color: rgb(250, 74, 212);
+      
+    }
+  
+    .five {
+      background-color: rgb(131, 209, 219);
+      
+    }
+  
+    .six {
+      background-color: rgb(152, 41, 255);
+      color: white;
+    }
+  }
+
+  // 
+  .project-card-grid:nth-child(4) {
+    .one {
+      background-color: rgb(74, 238, 250);
+    }
+  
+    .two {
+      background-color: rgb(49, 47, 71);
+    }
+  
+    .three {
+      background-color: rgb(0, 0, 0);
+      color: white;
+    }
+  
+    .four {
+      background-color: rgb(74, 238, 250);
+      
+    }
+  
+    .five {
+      background-color: rgb(49, 47, 71);
+    }
+  
+    .six {
+      background-color: rgb(0, 0, 0);
+      color: white;
+    }
+  }
+
+
+
+
+
+
+
   .one {
     grid-column: 1/2;
     grid-row: 1/2;
-    background-color: rgb(115, 51, 235);
+    
   }
 
   .two {
     grid-column: 2/5;
     grid-row: 1/3;
     align-items: flex-start;
-    background-color: rgb(39, 255, 255);
   }
 
   .three {
     grid-column: 1/2;
     grid-row: 2/4;
-    background-color: rgb(245, 62, 220);
   }
 
   .four {
     grid-column: 2/5;
     grid-row: 3/4;
-    background-color: rgb(115, 51, 235);
-    color: white;
     padding: 10px;
   }
 
   .five {
     grid-column: 1/3;
     grid-row: 4/5;
-    background-color: rgb(39, 255, 255);
   }
 
   .six {
     grid-column: 3/5;
     grid-row: 4/5;
-    background-color: rgb(245, 62, 220);
   }
 
   .project-card-grid h2 {
     font-size: 2rem;
     margin-bottom: 10px;
+    text-align: center;
+    padding: 10px;
 
   }
   
@@ -299,8 +426,7 @@ body {
     padding: 5px 10px;
     font-size: 1rem;
     font-weight: 700;
-    border-left: solid 1px black;
-    border-right: solid 1px black;
+    font-style: italic;
   }
   
   .links {
@@ -335,11 +461,71 @@ body {
     padding: 10px;
     font-style: italic;
     font-weight: 700;
-    color: white;
   }
-  
 
-  @media (max-width: 1024px) {
+
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me {
+    width: 800px;
+    background-color: white;
+    padding: 50px;
+    position: relative;
+  }
+
+  .about-me::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 20px;
+    width: 100%;
+    left: 0;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg') bottom;
+    background-size: 200%;
+  }
+
+  .contact-links {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    .contact-link {
+      margin: 10px;
+      padding: 20px;
+      color: black;
+      font-size: 2rem;
+      text-decoration: none;
+      background-color: white;
+      position: relative;
+      writing-mode: vertical-rl; /* Makes the text flow vertically */
+      text-orientation: sideways;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    }
+    .contact-link::after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      height: 20px;
+      width: 100%;
+      left: 0;
+      background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg') bottom;
+      background-size: 500%;
+      transform: rotate(180deg); /* Rotates the pseudo-element */
+    }
+    
+    .contact-link:hover {
+      transform: translateY(30px) rotate(-5deg); 
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  }
+    
+  }
+
+ 
+  @media (max-width: 990px) {
     .home-title {
       font-size: 6rem;
     }
@@ -377,20 +563,22 @@ body {
       flex-direction: column;
       align-items: center;
     }
-  }
 
-  .project-card-grid ul {
+    .project-card-grid ul {
     
-    flex-direction: column;
+      flex-direction: column;
+    }
+  
+    .links {
+      flex-direction: column;
+    }
+  
+    .projects {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
-  .links {
-    flex-direction: column;
-  }
-
-  .projects {
-    grid-template-columns: repeat(1, 1fr);
-  }
+ 
   
   @media (max-width: 480px) {
     .home-title {

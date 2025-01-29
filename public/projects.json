@@ -7,7 +7,6 @@
     "img": "./proj-imgs/lt-tattoo.png",
     "live_demo": "https://lt-tattoo.vercel.app/#/",
     "repository": "https://github.com/yazzamuffiny/LT-Tattoo",
-    "backend": "https://github.com/yazzamuffiny/LT-Tattoo-Backend",
     "disclaimer": "Disclaimer: This website was created as part of an academic project and may not reflect the business. It is intended for educational purposes only."
   },
   {
@@ -32,7 +31,7 @@
   },
   {
     "id": 4,
-    "name": "Welcome Gamer Games Catalogue",
+    "name": "Games Catalogue",
     "description": "This Website is a comprehensive platform designed to showcase and manage a collection of video games. It features an intuitive user interface where users can explore games by genre, platform, or alphabetically. Each game listing includes detailed information, such as descriptions, price, and media previews. ",
     "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
     "img": "./proj-imgs/game-catelogue.png",

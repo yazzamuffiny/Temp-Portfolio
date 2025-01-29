@@ -64,7 +64,7 @@ const RotatingText = () => {
             position: 'absolute',
             top: 0,
             opacity: wordIndex === currentWordIndex ? 1 : 0,
-            transition: 'opacity 1s ease',
+            transition: 'opacity 0.5s ease',
           }}
         >
           {Array.from(word).map((letter, index) => (
