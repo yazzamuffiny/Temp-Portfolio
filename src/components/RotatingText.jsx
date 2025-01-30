@@ -73,7 +73,7 @@ const RotatingText = () => {
               className={`letter ${letterClasses[`${wordIndex}-${index}`] || ''}`}
               style={{
                 display: 'inline-block',
-                transition: 'opacity 0.5s, transform 0.5s',
+                transition: 'opacity 0.25s, transform 0.25s',
               }}
             >
               {letter}
